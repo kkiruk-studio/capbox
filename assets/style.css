@@ -113,6 +113,12 @@ nav .wrap { display: flex; align-items: center; justify-content: space-between; 
   border: 1px solid rgba(255,255,255,.25); transition: transform .15s ease;
 }
 .store-badge:hover { transform: translateY(-2px); }
+.store-badge.disabled {
+  background: transparent; color: var(--ink-on-accent); border: 1.5px dashed rgba(15,26,0,.45);
+  cursor: default; pointer-events: none;
+}
+.store-badge.disabled svg { fill: var(--ink-on-accent); opacity: .7; }
+.store-badge.disabled:hover { transform: none; }
 .store-badge svg { width: 26px; height: 26px; fill: #fff; }
 .store-badge .txt { line-height: 1.15; text-align: left; }
 .store-badge .txt small { display: block; font-size: 11px; opacity: .8; }
@@ -125,7 +131,7 @@ nav .wrap { display: flex; align-items: center; justify-content: space-between; 
   border-radius: 46px; padding: 11px; background: #101010;
   box-shadow: 0 40px 80px rgba(6,40,36,.45), inset 0 0 0 2px rgba(255,255,255,.09);
 }
-.phone img { border-radius: 36px; }
+.phone img { border-radius: 36px; width: 100%; height: auto; }
 .phone .island { position: absolute; top: 21px; left: 50%; transform: translateX(-50%); width: 86px; height: 26px; border-radius: 14px; background: #030303; }
 .hero .phone { margin-bottom: -64px; }
 .chip {
@@ -204,49 +210,13 @@ section .lede { color: var(--ink2); max-width: 40em; font-size: 17px; word-break
 .shots figcaption { text-align: center; margin-top: 16px; font-family: var(--mono); font-size: 11px; font-weight: 700; letter-spacing: .22em; color: var(--ink2); }
 .shots figure:nth-child(2) { transform: translateY(34px); }
 
-/* CSS-mockup phone fallback (no photography) */
-.phone.mock { background: #101010; }
-.mock-screen {
-  aspect-ratio: 9/19.5; border-radius: 36px; overflow: hidden; position: relative;
-  background: linear-gradient(180deg, #0f1418, #0a0c0e);
-  padding: 46px 14px 18px;
-}
-.mock-screen .mtitle { color: #fff; font-weight: 800; font-size: 15px; margin-bottom: 12px; }
-.mock-screen .mgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
-.mock-screen .mfolder {
-  border-radius: 12px; padding: 10px; background: rgba(255,255,255,.08);
-  border: 1px solid rgba(255,255,255,.12); color: #fff;
-}
-.mock-screen .mfolder .micon {
-  width: 30px; height: 30px; border-radius: 8px; display: grid; place-items: center;
-  font-size: 15px; margin-bottom: 20px;
-}
-.mock-screen .mfolder .mname { font-size: 12px; font-weight: 700; }
-.mock-screen .mfolder .mcount { font-size: 10px; color: rgba(255,255,255,.55); margin-top: 2px; }
-.mock-screen.sort { padding-top: 60px; }
-.mock-screen.sort .shotcard {
-  width: 78%; margin: 0 auto; aspect-ratio: 9/16; border-radius: 16px; overflow: hidden;
-  background: linear-gradient(160deg, rgba(255,255,255,.14), rgba(255,255,255,.04));
-  border: 1px solid rgba(255,255,255,.14);
-  display: flex; flex-direction: column; gap: 8px; padding: 14px;
-}
-.mock-screen.sort .shotcard .sbar { height: 7px; border-radius: 4px; background: rgba(255,255,255,.18); }
-.mock-screen.sort .chiprow { display: flex; gap: 8px; margin-top: 18px; flex-wrap: wrap; justify-content: center; }
-.mock-screen.sort .mchip {
-  background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.16); color: #fff;
-  border-radius: 99px; padding: 6px 12px; font-size: 11px; font-weight: 700;
-}
-.mock-screen.stats { }
-.mock-screen.stats .mstatrow { display: flex; gap: 8px; margin-bottom: 14px; }
-.mock-screen.stats .mstat { flex: 1; background: rgba(255,255,255,.08); border-radius: 12px; padding: 10px; color: #fff; }
-.mock-screen.stats .mstat .mv { font-size: 18px; font-weight: 900; }
-.mock-screen.stats .mstat .ml { font-size: 9px; color: rgba(255,255,255,.55); margin-top: 2px; }
-.mock-screen.stats .mbars { display: flex; align-items: flex-end; gap: 6px; height: 70px; }
-.mock-screen.stats .mbars .mbar { flex: 1; background: var(--accent); border-radius: 4px 4px 0 0; }
-
 /* ---------- final cta / footer ---------- */
 .final { background: linear-gradient(165deg, var(--accent), var(--accent-deep)); color: var(--ink-on-accent); text-align: center; }
 .final h2 { margin: 0 0 12px; }
+.final .wit {
+  font-family: var(--mono); font-size: 12px; font-weight: 700; letter-spacing: .14em;
+  color: rgba(15,26,0,.7); margin-bottom: 18px;
+}
 .final .lede { color: rgba(15,26,0,.8); margin: 0 auto; }
 .final .cta { justify-content: center; margin-bottom: 0; }
 
@@ -257,6 +227,9 @@ footer .brand img { width: 24px; height: 24px; border-radius: 6px; }
 footer .links { display: flex; gap: 22px; flex-wrap: wrap; }
 footer a { color: #b9c4c1; text-decoration: none; }
 footer a:hover { color: #fff; }
+
+/* keep-all would forbid breaks inside unspaced Japanese/Chinese runs */
+html[lang="ja"] :is(h1, h2, h3, p), html[lang="zh-Hant"] :is(h1, h2, h3, p) { word-break: normal; line-break: strict; }
 
 @media (max-width: 860px) {
   .hero .wrap { grid-template-columns: 1fr; gap: 12px; padding-top: 56px; }

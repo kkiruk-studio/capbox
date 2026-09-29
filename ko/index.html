@@ -3,17 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CapBox — 스크린샷 자동 분류</title>
-<meta name="description" content="단톡방 짤, 영수증, 지도 캡처로 쌓인 스크린샷을 CapBox가 온디바이스 AI로 자동 분류합니다. 사진은 기기 밖으로 나가지 않아요.">
-<meta property="og:title" content="CapBox — 스크린샷 자동 분류">
-<meta property="og:description" content="일단 캡처해두면, CapBox 안에 정리돼 있다.">
-<meta property="og:image" content="https://kkiruk-studio.github.io/capbox/assets/icon-512.png">
+<title>CapBox — 스크린샷 정리 · 사진 속 텍스트 검색</title>
+<meta name="description" content="쌓인 스크린샷과 짤을 한 장씩 넘기며 폴더로 정리하고, 필요 없는 건 휴지통에 모아 한 번에 삭제하세요. 사진 속 글자로 검색까지, 전부 기기 안에서 무료로.">
+<meta property="og:title" content="CapBox — 스크린샷 정리">
+<meta property="og:description" content="쌓인 캡처, 넘기면서 폴더로. 사진 속 글자로 다시 찾기.">
+<meta property="og:image" content="https://www.kkirukstudio.com/capbox/assets/icon-512.png">
+<meta property="og:url" content="https://www.kkirukstudio.com/capbox/ko/">
 <meta property="og:type" content="website">
-<link rel="canonical" href="https://kkiruk-studio.github.io/capbox/ko/">
-<link rel="alternate" hreflang="x-default" href="https://kkiruk-studio.github.io/capbox/">
-<link rel="alternate" hreflang="ko" href="https://kkiruk-studio.github.io/capbox/ko/">
-<link rel="alternate" hreflang="en" href="https://kkiruk-studio.github.io/capbox/">
-<link rel="alternate" hreflang="ja" href="https://kkiruk-studio.github.io/capbox/ja/">
+<link rel="canonical" href="https://www.kkirukstudio.com/capbox/ko/">
+<link rel="alternate" hreflang="x-default" href="https://www.kkirukstudio.com/capbox/">
+<link rel="alternate" hreflang="ko" href="https://www.kkirukstudio.com/capbox/ko/">
+<link rel="alternate" hreflang="en" href="https://www.kkirukstudio.com/capbox/">
+<link rel="alternate" hreflang="ja" href="https://www.kkirukstudio.com/capbox/ja/">
+<link rel="alternate" hreflang="zh-Hant" href="https://www.kkirukstudio.com/capbox/zh-hant/">
 <link rel="icon" type="image/png" href="../assets/icon-180.png">
 <link rel="apple-touch-icon" href="../assets/icon-180.png">
 <link rel="stylesheet" href="../assets/style.css">
@@ -24,7 +26,7 @@
 <nav>
   <div class="wrap">
     <a class="wordmark" href="../"><img src="../assets/icon-180.png" alt=""><span>CAPBOX</span></a>
-    <div class="lang"><a href="../ko/" class="cur">한국어</a><a href="../">EN</a><a href="../ja/">日本語</a></div>
+    <div class="lang"><a href="../ko/" class="cur">한국어</a><a href="../">EN</a><a href="../ja/">日本語</a><a href="../zh-hant/">繁體中文</a></div>
   </div>
 </nav>
 
@@ -33,36 +35,31 @@
   <div class="wrap">
     <div>
       <div class="kicker"><span>CAPBOX</span><span class="rule"></span><span class="num">스크린샷 정리</span></div>
-      <h1>일단 캡처해두면,<br><em>CapBox</em> 안에 정리돼 있다.</h1>
-      <div class="demo">
+      <h1>쌓인 캡처,<br><em>넘기면서</em> 정리하세요.</h1>
+      <div class="demo" aria-hidden="true">
         <div class="shot"><div class="bar w80"></div><div class="bar w60"></div><div class="bar w40"></div></div>
         <div class="folder"><span class="g">📁</span><span class="label">짤/밈 폴더</span></div>
       </div>
-      <p class="sub">단톡방에서 쏟아지는 짤, 결제하고 찍어둔 영수증, 여행 중 캡처한 지도까지 — 사진 앱에 뒤섞인 스크린샷을 CapBox가 폴더별로 정리합니다. 온디바이스 AI라 사진은 기기 밖으로 절대 나가지 않아요.</p>
+      <p class="sub">단톡방에서 저장한 짤, 배달 주문 내역, 맛집 찾다 캡처한 네이버 지도까지 — 사진첩에 뒤섞인 스크린샷을 한 장씩 넘기며 폴더로 보내세요. 필요 없는 건 휴지통에 모았다가 한 번에 비우고, 나중엔 사진 속 글자로 찾으면 됩니다.</p>
       <div class="cta">
-        <a class="store-badge" id="storeLink" href="#" aria-label="App Store에서 다운로드"><svg viewBox="0 0 384 512" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg><span class="txt"><small>다운로드는</small><strong>App Store</strong></span></a>
-        <span class="note">온디바이스 · 가입 없음 · iPhone</span>
+        <span class="store-badge disabled" id="storeLink" aria-disabled="true"><svg viewBox="0 0 384 512" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg><span class="txt"><small>곧 출시</small><strong>App Store</strong></span></span>
+        <span class="note">온디바이스 · 가입 없음 · 무료</span>
       </div>
     </div>
     <div class="phone-col">
-      <div class="chip c1"><span class="g">짤</span>짤/밈 폴더</div><div class="chip c2"><span class="g">영</span>영수증 폴더</div><div class="chip c3"><span class="g">지</span>지도 폴더</div>
-      <div class="phone mock"><div class="mock-screen"><div class="mtitle">CapBox</div><div class="mgrid">
-      <div class="mfolder"><div class="micon" style="background:#ff9f43">😂</div><div class="mname">짤/밈</div><div class="mcount">128</div></div>
-      <div class="mfolder"><div class="micon" style="background:#5b8def">💬</div><div class="mname">대화</div><div class="mcount">64</div></div>
-      <div class="mfolder"><div class="micon" style="background:#e8618c">🧾</div><div class="mname">결제</div><div class="mcount">32</div></div>
-      <div class="mfolder"><div class="micon" style="background:#2ecc71">🗺️</div><div class="mname">지도</div><div class="mcount">21</div></div>
-      </div></div><div class="island"></div></div>
+      <div class="chip c1"><span class="g">짤</span>짤/밈 폴더</div><div class="chip c2"><span class="g">결</span>결제 폴더</div><div class="chip c3"><span class="g">지</span>지도 폴더</div>
+      <div class="phone"><img src="../assets/shots/ko-library.jpg" alt="CapBox 보관함 화면 — 정리 안 된 캡처 1,284장과 짤/밈·대화·결제·지도·쇼핑·문서 폴더" width="552" height="1200" decoding="async"></div>
     </div>
   </div>
 </header>
 
-<div class="marquee" aria-hidden="true"><div class="track"><span>짤 정리</span><span>영수증 정리</span><span>대화 캡처</span><span>지도 캡처</span><span>온디바이스 AI</span><span>텍스트 검색</span><span>원터치 분류</span><span>일괄 정리</span><span>짤 정리</span><span>영수증 정리</span><span>대화 캡처</span><span>지도 캡처</span><span>온디바이스 AI</span><span>텍스트 검색</span><span>원터치 분류</span><span>일괄 정리</span></div></div>
+<div class="marquee" aria-hidden="true"><div class="track"><span>한 장씩 스와이프</span><span>여러 장씩 정리</span><span>폴더 칩 한 탭</span><span>휴지통 일괄 삭제</span><span>사진 속 텍스트 검색</span><span>사진 앱 앨범 연동</span><span>기존 앨범 가져오기</span><span>온디바이스</span><span>한 장씩 스와이프</span><span>여러 장씩 정리</span><span>폴더 칩 한 탭</span><span>휴지통 일괄 삭제</span><span>사진 속 텍스트 검색</span><span>사진 앱 앨범 연동</span><span>기존 앨범 가져오기</span><span>온디바이스</span></div></div>
 
 <section>
   <div class="wrap">
     <div class="kicker"><span>사용 방법</span><span class="rule"></span><span class="num">01–03</span></div>
-    <h2>스캔 한 번, <em>탭 한 번</em>으로 정리 끝.</h2>
-    <div class="steps"><div class="step"><span class="n">01</span><span class="tag">스캔</span><h3>사진 라이브러리 스캔</h3><p>카메라 롤에 쌓인 스크린샷을 한 번에 훑어서 몇 장이 정리 안 됐는지 보여줍니다.</p></div><div class="step"><span class="n">02</span><span class="tag">분류</span><h3>AI 제안 확인하고 한 탭</h3><p>온디바이스 AI가 폴더를 추천하면 한 장씩, 또는 여러 장을 한 번에 골라 보낼 수 있어요.</p></div><div class="step"><span class="n">03</span><span class="tag">보관</span><h3>사진 앱 앨범으로 저장</h3><p>정리된 스크린샷은 사진 앱의 진짜 앨범이 되어, CapBox 없이도 그대로 남습니다.</p></div></div>
+    <h2>스캔하고, 넘기고, <em>앨범으로 남기기</em>.</h2>
+    <div class="steps"><div class="step"><span class="n">01</span><span class="tag">스캔</span><h3>사진 보관함 스캔</h3><p>카메라 롤을 훑어서 아직 정리 안 된 캡처가 몇 장인지 보여줍니다. 스크린샷만, 또는 전체 사진을 대상으로 고를 수 있어요.</p></div><div class="step"><span class="n">02</span><span class="tag">정리</span><h3>넘기면서 폴더로</h3><p>한 장씩 좌우로 넘기며 아래 폴더 칩을 탭하면 끝. 여러 장을 골라 한 번에 보낼 수도 있어요. 필요 없는 건 휴지통으로.</p></div><div class="step"><span class="n">03</span><span class="tag">보관</span><h3>사진 앱 앨범으로 남음</h3><p>폴더는 사진 앱 ‘CapBox’ 폴더 안의 진짜 앨범이라, CapBox를 지워도 정리한 결과는 그대로 남습니다.</p></div></div>
   </div>
 </section>
 
@@ -70,38 +67,25 @@
   <div class="wrap">
     <div class="kicker"><span>핵심 가치</span><span class="rule"></span><span class="num">온디바이스</span></div>
     <h2>정리는 되는데, <em>사진은 안 나간다</em>.</h2>
-    <p class="lede">OCR도, 이미지 분류도 전부 기기 안에서 Vision 프레임워크로 처리합니다. 서버가 없으니 보낼 곳도 없어요.</p>
-    <div class="convert-table"><div class="convert-row"><span class="g">1</span><span class="label">사진 보관함 스캔</span><span class="cat">1단계</span></div><div class="convert-row"><span class="g">2</span><span class="label">온디바이스 AI 분류 제안</span><span class="cat">2단계</span></div><div class="convert-row"><span class="g">3</span><span class="label">사진 앱 앨범에 저장</span><span class="cat">3단계</span></div></div>
+    <p class="lede">사진 속 글자 인식도, 검색도 전부 iPhone 안에서 처리합니다. 서버가 없으니 보낼 곳도 없어요. 가입도, 인앱 결제도 없습니다.</p>
+    <div class="convert-table"><div class="convert-row"><span class="g">1</span><span class="label">스크린샷 스캔</span><span class="cat">기기 안</span></div><div class="convert-row"><span class="g">2</span><span class="label">사진 속 글자 인식 (OCR)</span><span class="cat">기기 안</span></div><div class="convert-row"><span class="g">3</span><span class="label">정리 결과 저장</span><span class="cat">사진 앱 앨범</span></div></div>
   </div>
 </section>
 
 <section style="padding-top:0">
   <div class="wrap">
     <div class="kicker"><span>폴더 구성</span><span class="rule"></span><span class="num">예시</span></div>
-    <h2>카테고리는 <em>내 마음대로</em>.</h2>
-    <p class="lede">짤/밈, 대화, 결제, 지도, 쇼핑, 문서 — 기본 제안 폴더로 시작하고, 이름·색·아이콘은 자유롭게 바꿀 수 있습니다.</p>
-    <div class="providers"><div class="prov"><span class="flag">😂</span><h3>짤/밈</h3><ul><li><span class="g">웃</span>밈 모음</li></ul></div><div class="prov"><span class="flag">💬</span><h3>대화</h3><ul><li><span class="g">카</span>단톡방 캡처</li></ul></div><div class="prov"><span class="flag">🧾</span><h3>결제</h3><ul><li><span class="g">영</span>주문 내역</li></ul></div><div class="prov"><span class="flag">🗺️</span><h3>지도</h3><ul><li><span class="g">장</span>가게·주소 캡처</li></ul></div></div>
+    <h2>폴더는 <em>내 마음대로</em>.</h2>
+    <p class="lede">짤/밈·대화·결제·지도·쇼핑·문서 기본 폴더 세트로 시작하거나, 이미 만들어 둔 앨범을 가져오세요. 이름·색·아이콘은 언제든 바꿀 수 있어요.</p>
+    <div class="providers"><div class="prov"><span class="flag">😂</span><h3>짤/밈</h3><ul><li><span class="g">✓</span>단톡방 짤</li><li><span class="g">✓</span>반응짤 모음</li></ul></div><div class="prov"><span class="flag">💬</span><h3>대화</h3><ul><li><span class="g">✓</span>카톡 대화 캡처</li><li><span class="g">✓</span>인스타 DM</li></ul></div><div class="prov"><span class="flag">🧾</span><h3>결제</h3><ul><li><span class="g">✓</span>배달 주문 내역</li><li><span class="g">✓</span>계좌이체 확인</li></ul></div><div class="prov"><span class="flag">🗺️</span><h3>지도</h3><ul><li><span class="g">✓</span>네이버 지도 캡처</li><li><span class="g">✓</span>맛집 주소</li></ul></div></div>
   </div>
 </section>
 
 <section class="shots">
   <div class="wrap">
-    <div class="kicker"><span>화면</span><span class="rule"></span><span class="num">IOS</span></div>
+    <div class="kicker"><span>화면</span><span class="rule"></span><span class="num">iOS</span></div>
     <h2>쌓아두기용이 아니라, <em>꺼내 쓰는 도구</em>로.</h2>
-    <div class="row"><figure><div class="phone mock"><div class="mock-screen"><div class="mtitle">CapBox</div><div class="mgrid">
-      <div class="mfolder"><div class="micon" style="background:#ff9f43">😂</div><div class="mname">짤/밈</div><div class="mcount">128</div></div>
-      <div class="mfolder"><div class="micon" style="background:#5b8def">💬</div><div class="mname">대화</div><div class="mcount">64</div></div>
-      <div class="mfolder"><div class="micon" style="background:#e8618c">🧾</div><div class="mname">결제</div><div class="mcount">32</div></div>
-      <div class="mfolder"><div class="micon" style="background:#2ecc71">🗺️</div><div class="mname">지도</div><div class="mcount">21</div></div>
-      </div></div><div class="island"></div></div><figcaption>폴더별 정리 화면</figcaption></figure><figure><div class="phone mock"><div class="mock-screen sort"><div class="shotcard">
-      <div class="sbar" style="width:70%"></div><div class="sbar" style="width:45%"></div><div class="sbar" style="width:85%"></div>
-      </div><div class="chiprow"><span class="mchip">짤/밈</span><span class="mchip">대화</span><span class="mchip">결제</span></div></div><div class="island"></div></div><figcaption>한 장씩 분류하기</figcaption></figure><figure><div class="phone mock"><div class="mock-screen stats"><div class="mstatrow">
-      <div class="mstat"><div class="mv">4,821</div><div class="ml">전체 이미지</div></div>
-      <div class="mstat"><div class="mv">1,203</div><div class="ml">스크린샷</div></div>
-      </div><div class="mbars">
-      <div class="mbar" style="height:30%"></div><div class="mbar" style="height:55%"></div><div class="mbar" style="height:40%"></div>
-      <div class="mbar" style="height:75%"></div><div class="mbar" style="height:60%"></div><div class="mbar" style="height:90%"></div>
-      </div></div><div class="island"></div></div><figcaption>통계로 보는 스크린샷</figcaption></figure></div>
+    <div class="row"><figure><div class="phone"><img src="../assets/shots/ko-library.jpg" alt="보관함 · 폴더" width="552" height="1200" loading="lazy" decoding="async"></div><figcaption>보관함 · 폴더</figcaption></figure><figure><div class="phone"><img src="../assets/shots/ko-sort.jpg" alt="넘기면서 정리" width="552" height="1200" loading="lazy" decoding="async"></div><figcaption>넘기면서 정리</figcaption></figure><figure><div class="phone"><img src="../assets/shots/ko-stats.jpg" alt="스크린샷 통계" width="552" height="1200" loading="lazy" decoding="async"></div><figcaption>스크린샷 통계</figcaption></figure></div>
   </div>
 </section>
 
@@ -109,15 +93,16 @@
   <div class="wrap">
     <div class="kicker"><span>디테일</span><span class="rule"></span><span class="num">06</span></div>
     <h2>작은 앱, <em>분명한 선택</em>.</h2>
-    <div class="grid6"><div class="feat"><h3>사진 앱 앨범과 동기화</h3><p>CapBox 폴더는 곧 사진 앱의 진짜 앨범입니다. 별도 저장소가 없어 데이터가 갇히지 않아요.</p></div><div class="feat"><h3>한 장씩 또는 한 번에</h3><p>카드 한 장씩 넘기며 정리할 수도, 여러 장을 골라 한 번에 폴더로 보낼 수도 있습니다.</p></div><div class="feat"><h3>온디바이스 AI 제안</h3><p>Vision으로 텍스트와 이미지를 분석해 폴더를 추천합니다. 사진은 기기 밖으로 절대 나가지 않아요.</p></div><div class="feat"><h3>스크린샷 속 텍스트 검색</h3><p>OCR로 읽어둔 텍스트 그대로 검색해서, 어떤 캡처였는지 기억 안 나도 바로 찾습니다.</p></div><div class="feat"><h3>필요 없는 캡처는 바로 삭제</h3><p>정리하다 필요 없어진 스크린샷은 그 자리에서 바로 지울 수 있어요.</p></div><div class="feat"><h3>연도·용량 통계</h3><p>스크린샷이 연도별로 몇 장씩 쌓였는지, 어떤 해상도가 많은지 한눈에 봅니다.</p></div></div>
+    <div class="grid6"><div class="feat"><h3>휴지통에 모았다가 한 번에</h3><p>정리하다 필요 없는 캡처는 휴지통으로. 모아서 확인하고 한 번에 비워요. 잘못 넣은 건 복원할 수 있어요.</p></div><div class="feat"><h3>사진 속 텍스트 검색</h3><p>캡처 안의 글자를 기기에서 인식해 둡니다. 폴더 안 사진은 물론 아직 정리 안 한 스크린샷도 글자로 찾아요. 한국어·영어·일본어·중국어(번체).</p></div><div class="feat"><h3>기존 앨범 가져오기</h3><p>사진 앱에 이미 만들어 둔 앨범을 CapBox 폴더로 가져와 이어서 정리할 수 있어요.</p></div><div class="feat"><h3>한 장씩, 또는 여러 장씩</h3><p>카드를 한 장씩 넘기며 정리할 수도, 여러 장을 골라 한 번에 폴더로 보낼 수도 있습니다.</p></div><div class="feat"><h3>연도별 · 해상도별 통계</h3><p>스크린샷이 해마다 몇 장씩 쌓였는지, 어떤 해상도가 많은지 한눈에 봅니다.</p></div><div class="feat"><h3>4개 언어 지원</h3><p>한국어·English·日本語·繁體中文. 앱 화면도, 글자 검색도.</p></div></div>
   </div>
 </section>
 
 <section class="final">
   <div class="wrap">
+    <p class="wit">엔트로피는 저절로 줄지 않습니다.</p>
     <h2>스크린샷 폴더, 더 이상 미루지 마세요.</h2>
-    <p class="lede">iPhone에서 무료.</p>
-    <div class="cta"><a class="store-badge" id="storeLink2" href="#" aria-label="App Store에서 다운로드"><svg viewBox="0 0 384 512" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg><span class="txt"><small>다운로드는</small><strong>App Store</strong></span></a></div>
+    <p class="lede">App Store 곧 출시. iPhone에서 무료, 인앱 결제 없음.</p>
+    <div class="cta"><span class="store-badge disabled" id="storeLink2" aria-disabled="true"><svg viewBox="0 0 384 512" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg><span class="txt"><small>곧 출시</small><strong>App Store</strong></span></span></div>
   </div>
 </section>
 
@@ -126,23 +111,13 @@
     <div class="brand"><img src="../assets/icon-180.png" alt=""><strong>kkiruk studio</strong></div>
     <div class="links">
       <a href="mailto:kkirukstudio.help@gmail.com">문의</a>
-      <a href="https://kkiruk-studio.github.io/privacy-policy-app/">개인정보 처리방침</a>
-      <a href="https://kkiruk-studio.github.io/terms-of-service-app/">이용약관</a>
+      <a href="https://www.kkirukstudio.com/legal/privacy/">개인정보 처리방침</a>
+      <a href="https://www.kkirukstudio.com/legal/terms/">이용약관</a>
     </div>
     <div>© 2026 kkiruk studio</div>
   </div>
 </footer>
 
-<script>
-  // After App Store approval, set the real URL here (e.g. https://apps.apple.com/app/id1234567890)
-  const APP_STORE_URL = "";
-  if (APP_STORE_URL) {
-    document.getElementById("storeLink").href = APP_STORE_URL;
-    document.getElementById("storeLink2").href = APP_STORE_URL;
-  } else {
-    document.getElementById("storeLink").style.display = "none";
-    document.getElementById("storeLink2").style.display = "none";
-  }
-</script>
+<script src="/ga.js"></script>
 </body>
 </html>
